@@ -1,4 +1,4 @@
-#ifndef BINARY_TREES 
+#ifndef BINARY_TREES
 #define BINARY_TREES
 #include <stddef.h>
 #include <stdlib.h>
@@ -32,10 +32,12 @@ int binary_tree_is_leaf(const binary_tree_t *node);
 int binary_tree_is_root(const binary_tree_t *node);
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
+void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
 
 /**
- *protpype to print the bynary tree
- * 
+ * binary_tree_print - Functions to print binary trees in a pretty way
+ * protpype to print the bynary tree
+ * tree: pointer
  */
 void binary_tree_print(const binary_tree_t *tree);
 #endif
