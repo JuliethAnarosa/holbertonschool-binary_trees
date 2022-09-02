@@ -23,6 +23,10 @@ typedef struct binary_tree_s
 
 void binary_tree_print(const binary_tree_t *);
 
+int max(int a, int b);
+size_t binary_height(const binary_tree_t *tree);
+int depth(const binary_tree_t *tree);
+int  is_perfect(const binary_tree_t *tree, int d, int level);
 
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
